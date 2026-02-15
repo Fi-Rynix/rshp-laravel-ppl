@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    @include('Partials.navbar-rshp')
+    @include('MainSite.navbar-rshp')
     <header>
       <img src="{{ asset('assets/logogabungan.png') }}" alt="logo_gabungan">
     </header>

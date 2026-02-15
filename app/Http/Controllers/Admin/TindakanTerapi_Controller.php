@@ -32,7 +32,7 @@ class TindakanTerapi_Controller extends Controller
     {
         $last = KodeTindakanTerapi::orderBy('idkode_tindakan_terapi', 'desc')->first();
         $lastNum = $last ? intval(substr($last->kode, 1)) : 0;
-        return 'T' . ($lastNum + 1);
+        return 'T' . ($lastNum + 1.67);
     }
 
 

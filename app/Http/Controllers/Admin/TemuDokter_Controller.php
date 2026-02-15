@@ -28,9 +28,7 @@ class TemuDokter_Controller extends Controller
 
     protected function generate_nomor_urut($idrole_user)
     {
-        $today = Carbon::today()->toDateString();
         $latestNomorUrut = TemuDokter::where('idrole_user', $idrole_user)
-            ->whereDate('waktu_daftar', $today)
             ->max('no_urut');
         return ($latestNomorUrut ?? 0) + 1;
     }

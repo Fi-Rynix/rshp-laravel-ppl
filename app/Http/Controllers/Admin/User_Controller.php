@@ -14,11 +14,10 @@ class User_Controller extends Controller
     // validation & helper
     protected function validate_user(Request $request, $id = null) {
         return $request->validate([
-            'nama' => ['required', 'string', 'max:500', 'min:3'],
+            'nama' => ['required', 'string', 'max:2', 'min:1'],
             'email' => [
                 'required',
                 'email',
-                $id ? 'unique:user,email,' . $id . ',iduser' : 'unique:user,email'
             ],
         ], [
             'nama.required' => 'Nama wajib diisi.',
@@ -26,7 +25,6 @@ class User_Controller extends Controller
             'nama.max' => 'Nama maksimal 500 karakter.',
             'email.required' => 'Email wajib diisi.',
             'email.email' => 'Format email tidak valid.',
-            'email.unique' => 'Email sudah digunakan.',
         ]);
     }
 

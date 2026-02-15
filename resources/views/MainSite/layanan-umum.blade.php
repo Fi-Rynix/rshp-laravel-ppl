@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body style="line-height: 28px;">
-  @include('Partials.navbar-rshp')
+  @include('MainSite.navbar-rshp')
   <h2>Bedah</h2>
   <ul>
     <li>Tindakan Bedah Minor

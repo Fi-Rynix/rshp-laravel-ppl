@@ -66,11 +66,11 @@
                         <td class="px-6 py-4">{{ $pet->ras_hewan_nama ?? '-' }}</td>
                         <td class="px-6 py-4">{{ $pet->tanggal_lahir ?? '-' }}</td>
                         <td class="px-6 py-4">
-                            @if($pet->jenis_kelamin == 'M')
+                            @if($pet->jenis_kelamin == 'J')
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
                                     Jantan
                                 </span>
-                            @elseif($pet->jenis_kelamin == 'F')
+                            @elseif($pet->jenis_kelamin == 'B')
                                 <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-pink-100 text-pink-800 text-xs font-semibold rounded-full">
                                     Betina
                                 </span>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body style="text-align:center; align-items: center; font-family: Arial; font-weight: bold;">
-    @include('Partials.navbar-rshp')
+    @include('MainSite.navbar-rshp')
     <table style="margin: auto;">
         <tr>
             <td style="width:80px; text-align:center;">

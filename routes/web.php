@@ -1,49 +1,51 @@
 <?php
 
 use App\Http\Controllers\Admin\Dashboard_Controller;
-use App\Http\Controllers\Auth\LoginController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\Dokter_Controller;
+use App\Http\Controllers\Admin\JenisHewan_Controller;
 
 //halaman utama
-use App\Http\Controllers\MainSite_Controller;
+use App\Http\Controllers\Admin\Kategori_Controller;
 
 //admin import
-use App\Http\Controllers\Admin\AdminSite_Controller;
-use App\Http\Controllers\Admin\JenisHewan_Controller;
-use App\Http\Controllers\Admin\Kategori_Controller;
+// use App\Http\Controllers\Admin\AdminSite_Controller;
 use App\Http\Controllers\Admin\KategoriKlinis_Controller;
-use App\Http\Controllers\Admin\Role_Controller;
 use App\Http\Controllers\Admin\Pemilik_Controller;
+use App\Http\Controllers\Admin\Perawat_Controller;
 use App\Http\Controllers\Admin\Pet_Controller;
 use App\Http\Controllers\Admin\RasHewan_Controller;
+use App\Http\Controllers\Admin\RekamMedis_Controller;
+use App\Http\Controllers\Admin\Role_Controller;
+use App\Http\Controllers\Admin\TemuDokter_Controller;
 use App\Http\Controllers\Admin\TindakanTerapi_Controller;
 use App\Http\Controllers\Admin\User_Controller;
-use App\Http\Controllers\Admin\Dokter_Controller;
-use App\Http\Controllers\Admin\Perawat_Controller;
-use App\Http\Controllers\Admin\TemuDokter_Controller;
-use App\Http\Controllers\Admin\RekamMedis_Controller;
-
-//dokter import
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Dokter\DashboardDokter_Controller;
-use App\Http\Controllers\Dokter\RekamMedisDokter_Controller;
 use App\Http\Controllers\Dokter\ProfilDokter_Controller;
 
+//dokter import
+use App\Http\Controllers\Dokter\RekamMedisDokter_Controller;
+use App\Http\Controllers\MainSite_Controller;
+use App\Http\Controllers\Pemilik\DashboardPemilik_Controller;
+
 //perawat import
-use App\Http\Controllers\Perawat\DashboardPerawat_Controller;
-use App\Http\Controllers\Perawat\RekamMedisPerawat_Controller;
-use App\Http\Controllers\Perawat\ProfilPerawat_Controller;
+use App\Http\Controllers\Pemilik\ProfilPemilik_Controller;
+use App\Http\Controllers\Pemilik\RekamMedisPemilik_Controller;
+use App\Http\Controllers\Pemilik\ReservasiSaya_Controller;
 
 //resepsionis import
+use App\Http\Controllers\Perawat\DashboardPerawat_Controller;
+use App\Http\Controllers\Perawat\ProfilPerawat_Controller;
+use App\Http\Controllers\Perawat\RekamMedisPerawat_Controller;
 use App\Http\Controllers\Resepsionis\DashboardResepsionis_Controller;
+
+//pemilik import
 use App\Http\Controllers\Resepsionis\PemilikResepsionis_Controller;
 use App\Http\Controllers\Resepsionis\PetResepsionis_Controller;
 use App\Http\Controllers\Resepsionis\TemuDokterResepsionis_Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
-//pemilik import
-use App\Http\Controllers\Pemilik\DashboardPemilik_Controller;
-use App\Http\Controllers\Pemilik\ReservasiSaya_Controller;
-use App\Http\Controllers\Pemilik\RekamMedisPemilik_Controller;
-use App\Http\Controllers\Pemilik\ProfilPemilik_Controller;
 
 Route::get('/', function () {
     return view('welcome');
@@ -57,9 +59,7 @@ Route::get('layanan-umum', [MainSite_Controller::class,'layanan_umum'])->name('l
 Route::get('cek-koneksi', [MainSite_Controller::class, 'cek_koneksi' ])->name('cek-koneksi');
 
 
-
 Auth::routes();
-
 
 
 //admin

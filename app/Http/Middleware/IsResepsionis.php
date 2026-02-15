@@ -17,7 +17,7 @@ class IsResepsionis
 
         $id_role = session('idrole');
 
-        if ($id_role == 4) {
+        if ($id_role == 3) {
             return $next($request);
         }
 
