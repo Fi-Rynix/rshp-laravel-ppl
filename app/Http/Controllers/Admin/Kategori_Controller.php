@@ -73,4 +73,4 @@ class Kategori_Controller extends Controller
         return redirect()->route('Admin.Kategori.daftar-kategori')
             ->with('success', 'Kategori berhasil dihapus.');
     }
-}
+}//cihuy

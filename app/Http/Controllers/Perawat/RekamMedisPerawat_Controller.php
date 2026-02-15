@@ -229,3 +229,4 @@ class RekamMedisPerawat_Controller extends Controller
             ->with('success', 'Rekam medis berhasil dihapus');
     }
 }
+//cihuy

@@ -89,3 +89,6 @@ class LoginController extends Controller
         return redirect('/login')->with('success', 'Logout berhasil');
     }
 }
+
+
+//cihuy

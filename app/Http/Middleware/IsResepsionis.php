@@ -24,3 +24,4 @@ class IsResepsionis
         return redirect()->back()->with('error', 'Anda tidak memiliki akses ke halaman ini.');
     }
 }
+//cihuy

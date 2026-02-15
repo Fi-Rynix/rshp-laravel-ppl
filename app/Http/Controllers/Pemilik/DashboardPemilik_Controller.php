@@ -12,3 +12,4 @@ class DashboardPemilik_Controller extends Controller
         return view('Pemilik.dashboard-pemilik');
     }
 }
+//cihuy

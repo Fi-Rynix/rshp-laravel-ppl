@@ -12,3 +12,4 @@ class DashboardPerawat_Controller extends Controller
         return view('Perawat.dashboard-perawat');
     }
 }
+//cihuy

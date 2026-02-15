@@ -162,7 +162,7 @@ Route::middleware(['auth', 'IsDokter'])->prefix('Dokter')->name('Dokter.')->grou
     Route::get('Profil/profil-saya', [ProfilDokter_Controller::class, 'profil_saya'])->name('Profil.profil-saya');
 });
 
-
+//cihuy
 
 //perawat
 Route::middleware(['auth', 'IsPerawat'])->prefix('Perawat')->name('Perawat.')->group(function () {

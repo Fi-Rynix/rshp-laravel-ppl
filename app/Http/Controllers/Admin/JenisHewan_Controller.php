@@ -82,5 +82,5 @@ class JenisHewan_Controller extends Controller
             ->with('success', 'Jenis hewan berhasil dihapus.');
     }
 }
-
+//cihuy
 ?>

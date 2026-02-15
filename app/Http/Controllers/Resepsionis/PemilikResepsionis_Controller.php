@@ -156,5 +156,5 @@ class PemilikResepsionis_Controller extends Controller
             ->with('success', 'Data pemilik berhasil dihapus.');
     }
 }
-
+//cihuy
 ?>

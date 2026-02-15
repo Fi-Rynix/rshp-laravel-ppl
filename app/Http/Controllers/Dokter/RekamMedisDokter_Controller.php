@@ -248,3 +248,4 @@ class RekamMedisDokter_Controller extends Controller
             ->with('success', 'Tindakan berhasil dihapus');
     }
 }
+//cihuy
